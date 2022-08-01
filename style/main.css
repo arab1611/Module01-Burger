@@ -19,6 +19,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../image/Logo.svg);
@@ -151,9 +157,14 @@ header {
     background-color: #FBB731;
     text-decoration: none;
     border-radius: 5px;
-    padding: 20px 25px;
+    padding: 18px 25px;
     text-transform: uppercase;
     margin-top: 15px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover{
+    background-color: transparent;
+    color: #FBB731;
 }
 .banner-title {
     color: #FFFFFF;
@@ -181,11 +192,10 @@ header {
     color: #FAF9F9;
     font-weight: 400;
     font-size: 15px;
-    padding-left: 100px;
-    line-height: 24px;
+    line-height: 1.6;
     max-width: 353px;
-    margin: 0 0 35px;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 .menu-header {
     display: flex;
@@ -269,6 +279,10 @@ header {
     display: flex;
     margin: 0 auto;
 }
+.menu-grid-btn:hover {
+    background-color: #F37335;
+    cursor: pointer;
+}
 .menu-grid-icon {
     background-image: url(../menu/cart\ button.svg);
     display: block;
@@ -309,7 +323,7 @@ header {
     margin-bottom: 19px;
     margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
@@ -318,8 +332,8 @@ header {
     line-height: 24px;
     list-style-type: none;
 }
-.footer-item a {
-    color: #DEDEDE;
+.footer-list a {
+    color: #FBB731;
     text-decoration: none;
     font-weight: 400;
 }
@@ -329,20 +343,19 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
-    font-size: 20px;
-    color: #FBB731;
+.footer-list-tel {
     margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
+    font-size: 20px;
+    color: #DEDEDE;
     font-weight: 900;
     list-style-type: none;
-}
-.footer-tel li {
-    margin-bottom: 12px;
 }
 .footer-list {
     padding-left: 0;
     list-style-type: none;
-}
-.title-me {
-    padding-left: 35px;
 }
