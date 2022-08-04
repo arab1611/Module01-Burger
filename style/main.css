@@ -284,7 +284,7 @@ header {
     cursor: pointer;
 }
 .menu-grid-icon {
-    background-image: url(../menu/cart\ button.svg);
+    background-image: url(../image/menu/cart-button.svg);
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -292,11 +292,12 @@ header {
     height: 18px;
 }
 .add-header {
-    text-transform: uppercase;
     color: #1B2A49;
-    font-size: 44px;
+    font-family: Nunito Sans;
+    font-size: 30px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    padding-top: 110px;
 }
 .footer-box {
     display: flex;
@@ -333,7 +334,7 @@ header {
     list-style-type: none;
 }
 .footer-list a {
-    color: #FBB731;
+    color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
 }
@@ -351,7 +352,7 @@ header {
 }
 .footer-list-tel a {
     font-size: 20px;
-    color: #DEDEDE;
+    color: #FBB731;
     font-weight: 900;
     list-style-type: none;
 }
