@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <header>
+    <header id="headerTop">
         <div class="container">
              <div class="header">
                 <a href="index.html" class="header-logo"></a> 
@@ -22,7 +22,7 @@
                             <li><a href="index.html">Главная</a></li>
                             <li><a href="#" class="active">Меню</a></li>
                             <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>           
@@ -229,5 +229,50 @@
             </div>           
         </div>
     </footer>
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <script>
+        // Smooth Scroll
+
+        const links = document.querySelectorAll(".banner-link");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+        });
+        }
+        // Button Up
+
+        window.onscroll = function(){scrollFunction()};
+
+        const upbuttons = document.querySelectorAll(".button-up");
+
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
+
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button-up hidden';
+            }
+        }
+</script>
 </body>
 </html>
